@@ -1,0 +1,139 @@
+:root {
+  --light-primary: #3b527545;
+  --dark-primary: #2e3d54;
+  --mid-primary: #3b5275;
+  --mid-gray: #505760;
+  --background: #f4f4f4;
+  --text-color: #1a1a1a;
+  --text-white: #f4f4f4;
+  --text-heading: #2e3d54;
+  --text-link: #3d65a1;
+  --text-link-hover: #3473d2;
+
+  font-family: Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
+  line-height: 1.5;
+  font-weight: 400;
+
+  color: var(--text-color);
+  background-color: var(--background);
+
+  font-synthesis: none;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  -webkit-text-size-adjust: 100%;
+}
+
+
+@media print {
+  :root {
+    background-color: white;
+  }
+}
+
+section {
+  page-break-after: always;
+}
+
+a {
+  font-weight: 500;
+  color: var(--text-link);
+  text-decoration: inherit;
+}
+
+a:hover {
+  color: var(--text-link-hover);
+  text-decoration: underline;
+}
+
+body {
+  margin: 0;
+  display: flex;
+  min-width: 320px;
+  min-height: 100vh;
+}
+
+h1,
+h2,
+h3 {
+  color: var(--text-heading);
+  margin: 0.5rem 0;
+  padding: 0.75rem 3rem;
+  font-weight: 700;
+}
+
+h4,
+h5,
+h6 {
+  font-weight: 500;
+  color: var(--text-heading);
+  margin: 0.25rem 3rem;
+  padding: 0;
+}
+
+p,
+ul {
+  margin: 1.25rem 0;
+  padding: 0 0.75rem 0 3.5rem;
+} 
+
+h1 {
+  font-size: 3.2em;
+  line-height: 1.1;
+  text-transform: uppercase;
+}
+
+@media ( max-width: 768px ) {
+  h1 {
+    font-size: 2.2rem;
+  }
+
+  h1,
+  h2,
+  h3 {
+    padding: 0.75rem 2rem;
+  }
+
+  h4,
+  h5,
+  h6 {
+    margin: 0.25rem 2rem;
+  }
+
+  p,
+  ul {
+    padding: 0 0.75rem 0 2.75rem;
+  } 
+}
+
+h2 {
+  font-size: 1.4rem;
+  line-height: 1.1;
+  text-transform: uppercase;
+  display: block;
+  background-color: var(--light-primary);
+}
+
+button {
+  border-radius: 8px;
+  border: 1px solid transparent;
+  padding: 0.6em 1.2em;
+  font-size: 1em;
+  font-weight: 500;
+  font-family: inherit;
+  background-color: #1a1a1a;
+  cursor: pointer;
+  transition: border-color 0.25s;
+}
+button:hover {
+  border-color: #646cff;
+}
+button:focus,
+button:focus-visible {
+  outline: 4px auto -webkit-focus-ring-color;
+}
+
+li {
+  margin-bottom: 0.25rem;
+  list-style: circle;
+}
